@@ -64,7 +64,9 @@ class _FullScreenButtonState extends State<FullScreenButton> {
             : Icons.fullscreen,
         color: widget.color,
       ),
-      onPressed: () => _controller.toggleFullScreenMode(),
+      onPressed: () {
+        _controller.toggleFullScreenMode();
+      },
     );
   }
 }

@@ -343,7 +343,7 @@ class _YoutubePlayerState extends State<YoutubePlayer> {
               timeOut: widget.controlsTimeOut,
             ),
             Positioned(
-                bottom: 0,
+                bottom: -3,
                 left: 18,
                 right: 0,
                 child: AnimatedOpacity(
@@ -357,6 +357,23 @@ class _YoutubePlayerState extends State<YoutubePlayer> {
                             ? const EdgeInsets.all(0.0)
                             : widget.actionsPadding,
                         child: CurrentPosition()))),
+            // Positioned(
+            //     bottom: -18,
+            //     left: 0,
+            //     right: 5,
+            //     child: AnimatedOpacity(
+            //         opacity: !controller.flags.hideControls &&
+            //                 controller.value.isControlsVisible
+            //             ? 1
+            //             : 0,
+            //         duration: const Duration(milliseconds: 300),
+            //         child: Padding(
+            //             padding: widget.bottomActions == null
+            //                 ? const EdgeInsets.all(0.0)
+            //                 : widget.actionsPadding,
+            //             child: Align(
+            //                 alignment: Alignment.centerRight,
+            //                 child: FullScreenButton())))),
             Positioned(
               bottom: -40,
               left: -7,
